@@ -1,8 +1,19 @@
 ---
-- hosts: all
-  gather_facts: no
+
+- name: regtest
+  hosts: all
+  connection: local
+
+  vars:
+    provider:
+      password: admin
+      server: localhost
+      user: admin
+      validate_certs: no
+      server_port: 10443
+
   tasks:
-    - name: create file
+    - name: Create file
       file:
         path: /tmp/file1
         state: touch

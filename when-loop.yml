@@ -1,0 +1,9 @@
+---
+- hosts: all
+#  gather_facts: no
+  tasks:
+    - name: create centos file
+      file:
+        path: /tmp/centos
+        state: touch
+      when: ansible_facts['distribution'] == "CentOS"

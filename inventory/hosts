@@ -8,4 +8,4 @@
 #   - You can enter hostnames or ip addresses
 #   - A hostname/ip can be a member of multiple groups
 #dpa2btecetx06vm002 ansible_host=node-2 ansible_ssh_host=xxx.x.xxx.97  ansible_user=super-user  ansible_python_interpreter=python
-host1a ansible_host=host1a ansible_ssh_host=34.123.43.9  ansible_user=ansimstr  ansible_python_interpreter=python
+host1a ansible_host=host1a ansible_ssh_host=10.128.0.6  ansible_user=ansimstr  ansible_python_interpreter=python
